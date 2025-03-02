@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div>
+        <div class="main-header">
+            <div class="wrapper">
+             <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text"> JONIBIBANG</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 
+
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Image</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="main-pic">
+                        <img src="https://scontent.fceb6-2.fna.fbcdn.net/v/t39.30808-6/481002072_650128730903489_7961057761196479191_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=aa7b47&_nc_eui2=AeH48Xc4bSMaDkb9dcx3AAukz5W0CT52YHvPlbQJPnZge3N4-p_8iBWhIS-wmAK7pXQ42jBr_uDuhAe7TxlB1wC1&_nc_ohc=mJMfLNYx4tUQ7kNvgG3p8Pt&_nc_oc=Adgxc9kXOZugt2UjWpk-QrTHzejVFB0DcXz2HrXJ6Ol38sQFd2AdKeoAfaIws2rV-9w&_nc_zt=23&_nc_ht=scontent.fceb6-2.fna&_nc_gid=AiT7PXu4kMK8MSASHgZVKI4&oh=00_AYD_IKVzXTZWrob99GigQCSWGLBIPnwQD4JYZPqgllyEUg&oe=67C9E8C4" alt="profile pic">
+
+                    </div>
+                    <div class="main-text">
+                  <h5>Hi, Im a <span class="input"> Student</span></h5>
+                  <h1>Joniver Sumalinog</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium quaerat veritatis quam, vitae, assumenda repudiandae eveniet voluptatum accusamus totam nobis ipsa ipsum laboriosam sed eius maxime! A, amet totam.</p>
+                  <div class="btn-group">
+                     <a href="#" class="btn active">Download</a>
+                     <a href="#" class="btn">Contact</a>
+                     
+                  </div>
+                  <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+       <script>
+        /* creating button click*/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li")
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+
+        })
+
+        var typed=new Typed(".input", {
+            strings:["Student", "BSIT", "Web Developer"],
+            typedSpeed: 99,
+            backspeed: 77,
+            loop: true,
+        
+        })
+       </script>
+             
+
+            
+
+    
+    
+</body>
+</html>
